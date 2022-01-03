@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India / My Online Meal.com</title>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS VARIABLES */
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /* NAVIGATION BAR */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        /*NAVIGATION BAR: LOGO AND IMAGES */
+        #logo {
+            margin: 15px 34px;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+
+        }
+
+        /*NAVIGATION BAR: LIST STYLING */
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        /* Home section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 550px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url(./top-view-fast-food-black-background-mock-up_23-2148321326.jpg) no-repeat center/cover;
+            height: 642px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        /*SERVICES SECTION */
+        #services {
+            margin: 34px;
+            display: flex;
+
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        /* CLIENT SECTION */
+        #client-section {
+            position: relative;
+
+
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url(./healthy-food-background-autumn-fresh-vegetables-dark-stone-table-with-copy-space-top-view_127032-1954.jpg);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-iteam {
+            padding: 34px;
+        }
+
+        #clients img {
+            height: 124px;
+        }
+
+        /* CONTACT SECTION */
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(./contact-us-2993000__480.webp) no-repeat center center/cover;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box lable {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+
+
+
+        /* UTILITY CLASSES */
+        .h-primary {
+            font-family: 'Bree Serif', serif;
+            font-size: 2.8rem;
+            padding: 12px;
+
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 1.3rem;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <navv id="navbar">
+
+        <div id="logo">
+            <img src="./RITIK_PHOTO_DU - Copy - Copy.jpg" alt="My Online Meal.com">
+        </div>
+
+        <ul>
+            <li class="itam"><a href="#home">Home</a></li>
+            <li class="itam"><a href="#services-container">Services</a></li>
+            <li class="itam"><a href="#client-section">Our Clients</a></li>
+            <li class="itam"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </navv>
+    <section id="home">
+        <h1 class="h-primary"> Wellcome to My Online Meal</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Labore nostrum doloribus sunt!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Odio.</p>
+        <button class="btn">Order Now</button>
+
+    </section>
+    <hr>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./pexels-photo-1633578.jpeg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat, earum provident quidem illo nulla porro autem impedit!
+                    Saepe recusandae, ullam pariatur quibusdam, accusantium magni vitae
+                    similique id maiores facilis iure cupiditate officia.</p>
+            </div>
+            <div class="box">
+                <img src="./Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat, earum provident quidem illo nulla porro autem impedit!
+                    Saepe recusandae, ullam pariatur quibusdam, accusantium magni vitae
+                    similique id maiores facilis iure cupiditate officia.</p>
+            </div>
+            <div class="box">
+                <img src="./depositphotos_120143704-stock-illustration-motorcycle-delivery-food-isolated-icon - Copy.jpg"
+                    alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat, earum provident quidem illo nulla porro autem impedit!
+                    Saepe recusandae, ullam pariatur quibusdam, accusantium magni vitae
+                    similique id maiores facilis iure cupiditate officia.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="client-section">
+
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-iteam">
+                <img src="./apple-curent-logo.jpg" alt="Our Clients">
+            </div>
+            <div class="client-iteam">
+                <img src="./google2.0.0.jpg" alt="Our Clients">
+            </div>
+            <div class="client-iteam">
+                <img src="./DSCF1179.0.0.jpg" alt="Our Clients">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <lable for="name">Name:</lable>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <lable for="email">Email:</lable>
+                    <input type="email" name="name" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <lable for="phone">Phone Number:</lable>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your Phone">
+                </div>
+                <div class="form-group">
+                    <lable for="message">Message</lable>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="center">
+            copyright&copy;WWW.My online Meal.com All rights reserved!
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
